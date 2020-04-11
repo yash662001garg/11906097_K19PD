@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> LPU</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /*CSS Reset*/
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    * body {
+        font-family: 'Baloo 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url(bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .left {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        opacity: 80%;
+        display: inline-block;
+        /* border: 2px solid rgb(216, 8, 8);*/
+    }
+    .left img {
+        width: 121px;
+        border-radius: 30px;
+    }
+    .mid {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        /*border: 2px solid rgb(109, 102, 102);*/
+    }
+    .menu-bar {
+        background-color: transparent;
+        text-align: center;
+    }
+    .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+
+    .menu-bar ul li {
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .menu-bar ul li a {
+        color: #f2ebeb;
+        text-decoration: none;
+    }
+
+    .menu-bar ul li:hover {
+        text-decoration: underline;
+        border-radius: 3px;
+    }
+    .sub-menu-1 {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        margin-top: 15px;
+        margin-left: -15px;
+
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted white;
+        background: transparent;
+        border-radius: 0px;
+        text-align: left;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+        border-bottom: none;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+        color: rgb(170, 163, 162);
+    }
+
+    .sub-menu-2 {
+        display: none;
+    }
+
+    .hover-me:hover .sub-menu-2 {
+        display: block;
+        position: absolute;
+        margin-left: 115px;
+        margin-top: -40px;
+        background: transparent;
+    }
+    .right {
+        display: inline-block;
+        /* border: 2px solid rgb(180, 152, 192);*/
+        position: absolute;
+        right: 30px;
+        top: 42px;
+        width: 12%;
+
+    }
+
+    .right a {
+        text-decoration: none;
+
+    }
+
+    .btn {
+        font-family: 'Baloo 2', cursive;
+        margin: 26px 41px;
+        background-color: #f2ebeb;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .btn:hover {
+        background-color: rgb(185, 143, 143);
+    }
+
+    .container {
+        /* border: 2px solid rgb(78, 70, 70);*/
+        margin: 209px 899px;
+        padding: 79px;
+        padding-top: -1px;
+        margin-top: 170px;
+        width: 50%;
+        border-radius: 59px;
+        font-style: italic;
+        font-size-adjust: none;
+        font-weight: bolder;
+        text-align:inherit;
+    }
+
+
+    .fa-angle-right {
+        float: right;
+    }
+
+
+    .btn1 {
+        font-family: 'Baloo 2', cursive;
+        margin: 17px 9px;
+        background-color: transparent;
+        padding: 4px 14px;
+        border: 2px solid white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .btn1:hover {
+        background-color: rgb(235, 235, 235);
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/images.jpeg">
+        </div>
+        <div class="mid">
+            <div class="menu-bar">
+                <ul>
+                    
+                    <li><a href="#">Apply</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">New</a></li>
+                                <li><a href="#">Exiting</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Renue</a><i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Check Availability</a><i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Boys Hostel</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li class="hover-me"><a href="#"> Rooms</a><i class="fa fa-angle-right"></i>
+                                    <div class="sub-menu-2">
+                                        <ul>
+                                            <li><a href="standard.html" target="blank">Standard</a></li>
+                                            <li><a href="apartment.html" target="blank">Apartment</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Girl Hostel</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li class="hover-me"><a href="#"> Rooms</a><i class="fa fa-angle-right"></i>
+                                    <div class="sub-menu-2">
+                                        <ul>
+                                            <li><a href="standard1.html" target="blank">Standard</a></li>
+                                            <li><a href="apartment1.html" target="blank">Apartment</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="my_account.html "> My Account</a></li>
+                    <li> <a href="#"> Status</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li class="hover-me"><a href="#"> Request ID Status</a>
+                                    <div class="sub-menu-2">
+                                        <ul>
+                                            <li><a href="#"></a>
+                                                <input class=" btn1" placeholder="ID Status" >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <li><a href="register.html"> register</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+
+            <a href="loginpage.html " class="btn" target="blank">login/register</a>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <h1>
+            Welcome To One Of The Largest Private University In India
+        </h1>
+        Thanks For visiting Lovely Professional University
+    </div>
+
+</body>
+
+</html>
